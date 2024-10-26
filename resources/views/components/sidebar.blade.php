@@ -1,8 +1,7 @@
-<div class="main-sidebar sidebar-style-2">
     <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
             <div class="sidebar-brand">
-                <a href="index.html">my-KEDAI</a>
+                <a href="index.html">KEDAIKU</a>
                 {{-- <a href="index.html"><img src="{{ asset('img/resto.png') }}" alt="logo" width="80"></a> --}}
             </div>
             <div class="sidebar-brand sidebar-brand-sm">
