@@ -1,8 +1,10 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
-use App\Http\Controller\ProductController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProfilController;
 
 Route::get('/', function () {
     return view('pages.auth.auth-login');
@@ -20,4 +22,5 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('user',UserController::class);
     Route::resource('product',ProductController::class);
+    Route::resource('profil',ProfilController::class);
 });

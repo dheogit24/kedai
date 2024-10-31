@@ -17,7 +17,7 @@ class ProductFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
+            'name' => $this->faker->word(),
             'description' => $this->faker->text(),
             'price' => $this->faker->numberBetween(100, 1000),
             'stock' => $this->faker->numberBetween(1, 100),
@@ -25,4 +25,13 @@ class ProductFactory extends Factory
             'image' => $this->faker->imageUrl(640, 400),
         ];
     }
+        /**
+     * Indicate that the model's email address should be unverified.
+     */
+    public function unverified(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'email_verified_at' => null,
+   ]);
+}
 }
